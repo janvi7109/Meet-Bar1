@@ -1,0 +1,24 @@
+{
+  "name": "meet-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script0" : "redis-server",
+    "script1":"cd client && npm start",
+    "script2" : "node server.js",
+    "start": "npm run script0 & npm run script1 & npm run script2"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "redis": "^3.1.2",
+    "socket.io": "^4.1.2"
+  }
+}
